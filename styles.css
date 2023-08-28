@@ -1,0 +1,482 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+.flipkart__header{
+    background-color: #2874f0;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+}
+.flipkart__nav-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 1248px;
+    margin: 0px auto;
+    
+}
+.flipkart__nav-logo{
+    display: flex;
+    justify-content: flex-end;
+    min-width: 140px;
+}
+.flipkart__logo_image{
+        width: 75px;
+}
+
+.flipkart__search{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 12px;
+}
+.flipkart__search-container{
+    height: 40px;
+    width: 560px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 2px 4px 0px;
+    display: flex;
+    border-radius: 2px;
+    
+}
+.flipkart__search-container > input {
+    width: calc(100% - 38px);
+    padding: 18px;
+    outline: none;
+    border: none;
+}
+
+.flipkart__search-container > button {
+    height: 100%;
+    width: 36px;
+    padding: 0px 8px;
+    border: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.flipkart__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+.flipkart__login_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 5px 10px; 
+    padding: 7px 60px;
+    color: #2874f0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.flipkart__login:hover .flipkart__login__dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.flipkart__seller, .flipkart__more, .flipkart__cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 300; 
+    padding: 8px 16px;
+    cursor: pointer;
+
+}
+
+.flipkart__more:hover .flipkart__more__dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    
+}
+.flipkart__login__dropdown{
+    display: none;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+}
+.flipkart__login__dropdown_signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flipkart__login__dropdown_signup a{
+    text-decoration: none;
+    color: gray;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.flipkart__login__dropdown_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.flipkart__login__dropdown_menu a{
+    text-decoration: none;
+    color: gray;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.flipkart__more__dropdown{
+    display: none;
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+.flipkart__more__dropdown a{
+    text-decoration: none;
+    color: gray;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* section 1 */
+
+.flipkart__section_1{
+    width: 100%;
+    background-color: white;
+    top: 60px;
+    position:absolute;
+    z-index: -50;
+    height: 100px;
+    margin: 5px;
+}
+.flipkart__section_1_menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+
+}
+.section_1__flipkart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section_1__flipkart > a{
+    text-decoration: none;
+    font-size: 12px;
+    color: gray;
+}
+.section_1__image{
+    height: 60px;
+    width: 60px;
+}
+
+/* section 2 */
+
+.section__2_flipkart{
+    position: absolute;
+    top: 165px;
+    width: 100%;
+    z-index: -10;
+}
+.section_2__slideshow{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.section_2__slides{
+    display: none; 
+}
+.section_2__prev, .section_2__next{
+    position: absolute;
+    top: 35%;
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: -22px;
+    color: black;
+    background-color: white;
+    padding: 20px 10px;
+    margin: 5px;
+
+}
+.section_2__next{
+    right: 0px;
+}
+
+/* section 3  */
+
+.section_3__flipkart{
+    position: absolute;
+    width: 100%;
+    top: 450px;
+    z-index: -4;
+}
+.section_3__flipkart_menu{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+.section_3__electronics{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90);
+    background-position: 0px bottom;
+    width: 230px;
+    background-repeat: no-repeat;
+}
+.section_3__electronics_heading{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    padding: 28px 10px 124px;
+}
+.section_3__electronics_heading >h2{
+    font-size: 30px;
+    line-height: 1.38;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.section_3__electronics_view{
+    margin-top: 24px;
+}
+.section_3__electronics_view > a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 14px;
+    background-color: #2874f0;
+    color: white;
+    border-radius: 2px;
+    border: none;
+
+}
+.section_3__flipkart_part_2{
+    display: flex;
+    flex-direction: column;
+}
+.section_3__part_2{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.section_3__flipkart_part_2_link{
+    padding: 25px 15px;
+    text-decoration: none;
+    text-align: center;
+    max-height: 366px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.section_3__product_type{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section_3__product_shop{
+    font-size: 16px;
+    color: #388e3c;
+    padding-top: 8px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section_3__product_name{
+    padding-top: 7px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    opacity: 0.6;
+}
+
+/* section 4 */
+
+.section_4__flipkart{
+    position: absolute;
+    width: 100%;
+    top: 770px;
+    z-index: -8;
+}
+
+
+.section_4__flipkart_menu{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+.section_4__electronics{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90);
+    background-position: 0px bottom;
+    width: 230px;
+    background-repeat: no-repeat;
+}
+.section_4__electronics_heading{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    padding: 28px 10px 124px;
+}
+.section_4__electronics_heading >h2{
+    font-size: 30px;
+    line-height: 1.38;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.section_4__electronics_view{
+    margin-top: 24px;
+}
+.section_4__electronics_view > a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 14px;
+    background-color: #2874f0;
+    color: white;
+    border-radius: 2px;
+    border: none;
+
+}
+.section_4__flipkart_part_2{
+    display: flex;
+    flex-direction: column;
+}
+.section_4__part_2{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.section_4__flipkart_part_2_link{
+    padding: 25px 15px;
+    text-decoration: none;
+    text-align: center;
+    max-height: 366px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.section_4__product_type{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section_4__product_shop{
+    font-size: 16px;
+    color: #388e3c;
+    padding-top: 8px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section_4__product_name{
+    padding-top: 7px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    opacity: 0.6;
+}
+
+/* footer  */
+
+footer{
+    background-color: #152336;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 1100px;
+}
+
+footer .second-last-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 50px;
+} 
+
+footer .second-last-div .footer-div{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: grey;
+
+}
+
+footer .second-last-div .footer-div div{
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center; */
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+footer .second-last-div .footer-div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    line-height: 2;
+    
+}
+
+footer .second-last-div .footer-div a:hover{
+    text-decoration: underline;
+    
+}
+
+footer .second-last-div .footer-div div div div p{
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+}
+footer .last-div{
+    border-top: 1px solid #454d5e;
+    width: 100%;
+    padding: 25px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+footer .last-div div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;  
+}
+footer .last-div div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap; 
+    margin: 5px 20px;
+}

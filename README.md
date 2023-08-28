@@ -1,0 +1,1 @@
+this is flipkart clone using html css and javascript
